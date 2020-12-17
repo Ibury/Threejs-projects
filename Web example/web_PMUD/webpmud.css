@@ -1,0 +1,97 @@
+th, td{
+    border: 3px solid #72C34E;
+}
+th{
+    font-size: 16px;
+}
+
+body {
+    background-color: #ffffff;
+    color:black;
+    font-family: 'Playfair Display', serif;
+}
+/*body {
+    margin: 0;
+    overflow: hidden;
+    background: #000046;
+    background: -webkit-linear-gradient(to top, #1CB5E0, #000046);
+    background: linear-gradient(to top, #1CB5E0, #000046);
+}*/
+body h2{
+    color:black;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#espai{
+    margin-top: 60px;
+}
+#fotocap{
+    float:left;
+}
+
+#fotoesq{
+    float:left;
+    width: 25%;
+    height: auto;
+}
+
+#fotodret{
+    float:right;
+    width: 30%;
+    height: auto;
+}
+
+#frasecen{
+    text-align: center;
+}
+
+h4{
+    font-size: 20px;
+}
+
+table{
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+form{
+    width:100%; 
+    border-radius: 10px 10px 10px 10px; 
+    border: 2px solid black; 
+    padding: 10px;
+}
+
+fieldset{
+    width:40%;
+}
+
+footer{
+    background-color:#3385ff; 
+    color:white; 
+    text-align: center; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+#divcen{
+    text-align: center;
+}
+
+#titleaudiovideo{
+    font-size: 22px;
+}
+
+#capnav{
+    text-align: center; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+
+}
+
+nav a{
+    color:black;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
