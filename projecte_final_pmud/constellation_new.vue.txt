@@ -1,0 +1,25 @@
+<template>
+    <form v-on:submit.prevent="submit_const">
+        <p>Nom:<input type="text" name="name" v-model="form.name"></p>
+        <p>Coordenades:<input type="text" name="name" v-model="form.coordinates"></p>
+        <p>Tamany:<input type="text" name="name" v-model="form.size"></p>
+        <input type="submit" value="Afegir constellation">
+    </form>    
+</template>
+<script>
+import axios from "axios";
+export default {
+    name: "new_constellation",
+    data: ()=>{return{form:{name:'',coordinates:'',size:0}}},
+    methods: {submit_const(){
+        axios.post("http://localhost:8001/newconstellation",this.form)
+        .then((res => {
+            this.$emit("const_save");
+            console.log(res);
+        }))
+    }}
+}
+</script>
+<style scoped>
+
+</style>

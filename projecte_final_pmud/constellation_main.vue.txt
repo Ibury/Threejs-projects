@@ -1,0 +1,33 @@
+<template>
+<div>
+    <button v-on:click="nova_const">Afegir constel·lació</button>
+    <div v-if="this.afegir">
+        <new_constellation v-on:const_save="missatge_const_save"/>
+    </div>
+    <div v-if="this.message">
+        <p>Constellation create!</p>
+    </div>
+</div>
+</template>
+<script>
+//import axios from 'axios';
+import new_constellation from "./constellation_new";
+export default {
+    name: "constellation",
+    data: ()=>{return{name:'',coordinates:'',size:0,afegir:false,message:false}},
+    methods: {nova_const:function(){
+        this.afegir=true;
+        this.message=false;
+    }, 
+        missatge_const_save:function(){
+            this.afegir=false;
+            this.message=true;
+        }
+    },
+    components: {new_constellation},
+    props: {}
+}
+</script>
+<style scoped>
+
+</style>
